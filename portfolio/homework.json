@@ -1,0 +1,38 @@
+{
+    "子": {
+        "url": "https://www.google.com/search?q=子"
+    },
+    "丑": {
+        "url": "https://www.google.com/search?q=丑"
+    },
+    "寅": {
+        "url": "https://www.google.com/search?q=寅"
+    },
+    "卯": {
+        "url": "https://www.google.com/search?q=卯"
+    },
+    "辰": {
+        "url": "https://www.google.com/search?q=辰"
+    },
+    "巳": {
+        "url": "https://www.google.com/search?q=巳"
+    },
+    "午": {
+        "url": "https://www.google.com/search?q=午"
+    },
+    "未": {
+        "url": "https://www.google.com/search?q=未"
+    },
+    "申": {
+        "url": "https://www.google.com/search?q=申"
+    },
+    "酉": {
+        "url": "https://www.google.com/search?q=酉"
+    },
+    "戌": {
+        "url": "https://www.google.com/search?q=戌"
+    },
+    "亥": {
+        "url": "https://www.google.com/search?q=亥"
+    }
+}
