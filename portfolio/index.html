@@ -1,1 +1,45 @@
-<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <link href="./main.bundle.css" rel="stylesheet"></head> <body> <div id="mycanvas"></div> <script defer="defer" src="./vendor.bundle.js"></script><script defer="defer" src="./main.bundle.js"></script></body> </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="./main.bundle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="position:absolute;z-index:999" id="btn-container"></div>
+    <div id="mycanvas"></div>
+    <script defer="defer" src="./vendor.bundle.js"></script>
+    <script defer="defer" src="./main.bundle.js"></script>
+
+    <script src="./scoreoutputer.min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            var so = new ScoreOutputer("109598105--評分表");
+            so.installCSS(function () {
+                so.addChild("創建場景", 2, true);
+                so.addChild("讀取字形檔", 2, true);
+                so.addChild("將地支以圓圈排列", 2, true);
+                so.addChild("滑鼠點擊 12 地支分別跳轉網頁", 1, true);
+                so.addChild("顯示 \"高等計算機圖形作業\"", 1, true);
+                so.addChild("時鐘效果", 1, true);
+                so.addChild("任何 ply 格式模型", 1, false);
+                so.renderModal(
+                    document.body,
+                    backgroundColor = 'rgba(100,45,58,1)',
+                    color = 'white',
+                    fontSize = '15pt',
+                    fsFontSize = '15px',
+                    dialogTitle = '自我評分表 (助教評分用)'
+                );
+                so.installDownloadBtn();
+                so.renderBtn(
+                    document.getElementById('btn-container'),
+                    "開啟自評表"
+                );
+            });
+        });
+    </script>
+</body>
+
+</html>
